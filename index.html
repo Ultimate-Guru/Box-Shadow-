@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTI-SHADOW</title>
     <style>
-        .box{
-            margin-top: 50px;
-            margin-left: 500px;
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        body {
+            background: linear-gradient(to right, #1abc9c, #3498db);
+        }
+        
+        .box {
+            margin: 50px 34%;
             width: 350px;
             height: 400px;
-            background: #ccc;
-            box-shadow: 10px 10px 10px blue, 10px 10px 15px red;
+            background: repeating-linear-gradient(to left, #d30606, #0000ff);
+            box-shadow: 0px 10px 15px #212121, 5px 4px 10px #333;
+            border-radius: 8px;
+            padding: 20px;  
         }
-        h3{
+
+        h3 {
             text-align: center;
-            font-weight: bold;
             font-size: x-large;
+            transition: 1s;
+            cursor: pointer;
         }
-        .box ul li{
-            font-weight: bold;
+
+        h3:hover {
+            transform: scale(1.1);
+        }
+
+        .box ul li {
             text-transform: uppercase;
-            margin: 10px 0px;
+            margin: 13px 8px;
             list-style: none;
+            transition: 1s;
+            cursor: pointer;
         }
-        .young::first-letter{
+
+        ul li:hover {
+            transform: scale(1.2);
+        }
+
+        .young::first-letter {
             font-size: xx-large;
-            text-shadow: 5px 5px 5px blue, 10px 10px 15px red;
+            text-shadow: 5px 5px 5px rgb(3, 3, 58), 10px 10px 15px rgb(171, 11, 11);
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <h3>LISTS OF <br>PROGRAMMERS</h3>
@@ -40,7 +67,9 @@
             <li class="young">NetNaija</li>
             <li class="young">Oluwatosin</li>
             <li class="young">Google Guys</li>
+            <li class="young">New Horizons</li>
         </ul>
     </div>
 </body>
+
 </html>
